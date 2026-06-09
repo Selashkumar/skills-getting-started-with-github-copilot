@@ -150,14 +150,44 @@ button:hover {
 }
 
 .participants-section ul {
-  list-style-position: inside;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .participants-section li {
-  padding: 4px 0;
+  padding: 6px 0;
   color: #555;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.participant-email {
+  flex: 1;
+}
+
+.delete-btn {
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  transition: background-color 0.2s;
+  flex-shrink: 0;
+}
+
+.delete-btn:hover {
+  background-color: #b71c1c;
 }
 
 footer {
